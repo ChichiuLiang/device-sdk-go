@@ -95,15 +95,14 @@ func CommandValuesToEventDTO(cvs []*models.CommandValue, deviceName string, sour
 
 		// ResourceOperation mapping
 		ro, err := cache.Profiles().ResourceOperation(device.ProfileName, cv.DeviceResourceName)
-		if err != nil {
-			// this allows SDK to directly read deviceResource without deviceCommands defined.
-			lc.Debugf("failed to read ResourceOperation: %v", err)
-		} else if len(ro.Mappings) > 0 {
+		if err == nil && len(ro.Mappings) > 0 {
 			newCV, ok := mapCommandValue(cv, ro.Mappings)
 			if ok {
 				cv = newCV
 			}
 		}
+		// Note: ResourceOperation may not exist for read-only DeviceResources without associated commands
+		// This is expected behavior and not an error condition
 
 		reading, err := commandValueToReading(cv, device.Name, device.ProfileName, dr.Properties.MediaType, origin)
 		if err != nil {
