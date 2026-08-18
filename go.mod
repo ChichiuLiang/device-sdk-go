@@ -1,4 +1,4 @@
-module github.com/edgexfoundry/device-sdk-go/v3
+module github.com/ChichiuLiang/device-sdk-go/v2
 
 go 1.20
 
