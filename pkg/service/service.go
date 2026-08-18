@@ -19,12 +19,12 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/clients"
-	sdkCommon "github.com/gq-tang/device-sdk-go/v2/internal/common"
-	"github.com/gq-tang/device-sdk-go/v2/internal/config"
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
-	restController "github.com/gq-tang/device-sdk-go/v2/internal/controller/http"
-	sdkModels "github.com/gq-tang/device-sdk-go/v2/pkg/models"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/clients"
+	sdkCommon "github.com/ChichiuLiang/device-sdk-go/v2/internal/common"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/config"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
+	restController "github.com/ChichiuLiang/device-sdk-go/v2/internal/controller/http"
+	sdkModels "github.com/ChichiuLiang/device-sdk-go/v2/pkg/models"
 
 	bootstrapConfig "github.com/edgexfoundry/go-mod-bootstrap/v2/bootstrap/config"
 	bootstrapContainer "github.com/edgexfoundry/go-mod-bootstrap/v2/bootstrap/container"
@@ -290,3 +290,4 @@ func RunningService() *DeviceService {
 func DriverConfigs() map[string]string {
 	return ds.config.Driver
 }
+

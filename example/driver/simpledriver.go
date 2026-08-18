@@ -24,11 +24,11 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/clients/logger"
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/common"
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/models"
-	"github.com/gq-tang/device-sdk-go/v2/pkg/interfaces"
+	"github.com/ChichiuLiang/device-sdk-go/v2/pkg/interfaces"
 	gometrics "github.com/rcrowley/go-metrics"
 
-	"github.com/gq-tang/device-sdk-go/v2/example/config"
-	sdkModels "github.com/gq-tang/device-sdk-go/v2/pkg/models"
+	"github.com/ChichiuLiang/device-sdk-go/v2/example/config"
+	sdkModels "github.com/ChichiuLiang/device-sdk-go/v2/pkg/models"
 )
 
 const readCommandsExecutedName = "ReadCommandsExecuted"
@@ -358,3 +358,4 @@ func (s *SimpleDriver) ValidateDevice(device models.Device) error {
 
 	return nil
 }
+

@@ -28,11 +28,11 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/cache"
-	"github.com/gq-tang/device-sdk-go/v2/internal/config"
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
-	sdkModels "github.com/gq-tang/device-sdk-go/v2/pkg/models"
-	"github.com/gq-tang/device-sdk-go/v2/pkg/models/mocks"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/cache"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/config"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
+	sdkModels "github.com/ChichiuLiang/device-sdk-go/v2/pkg/models"
+	"github.com/ChichiuLiang/device-sdk-go/v2/pkg/models/mocks"
 )
 
 const (
@@ -426,3 +426,4 @@ func TestRestController_SetCommand_ServiceLocked(t *testing.T) {
 	assert.Equal(t, http.StatusLocked, res.StatusCode, "Response status code not as expected")
 	assert.NotEmpty(t, res.Message, "Response message doesn't contain the error message")
 }
+

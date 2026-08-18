@@ -13,11 +13,11 @@ import (
 	"github.com/edgexfoundry/go-mod-bootstrap/v2/bootstrap/startup"
 	"github.com/edgexfoundry/go-mod-bootstrap/v2/di"
 	"github.com/gorilla/mux"
-	"github.com/gq-tang/device-sdk-go/v2/internal/common"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/common"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/cache"
-	"github.com/gq-tang/device-sdk-go/v2/internal/provision"
-	"github.com/gq-tang/device-sdk-go/v2/pkg/models"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/cache"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/provision"
+	"github.com/ChichiuLiang/device-sdk-go/v2/pkg/models"
 )
 
 // Bootstrap contains references to dependencies required by the BootstrapHandler.
@@ -93,3 +93,4 @@ func (b *Bootstrap) BootstrapHandler(ctx context.Context, wg *sync.WaitGroup, st
 
 	return true
 }
+

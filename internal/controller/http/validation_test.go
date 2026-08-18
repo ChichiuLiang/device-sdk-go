@@ -26,8 +26,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
-	"github.com/gq-tang/device-sdk-go/v2/pkg/models/mocks"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
+	"github.com/ChichiuLiang/device-sdk-go/v2/pkg/models/mocks"
 )
 
 var mockDevice = requests.AddDeviceRequest{
@@ -120,3 +120,4 @@ func TestRestController_Validate_Not_Implemented(t *testing.T) {
 
 	assert.Equal(t, http.StatusOK, recorder.Result().StatusCode, "Wrong status code")
 }
+

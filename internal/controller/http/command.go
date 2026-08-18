@@ -20,8 +20,8 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/errors"
 	"github.com/gorilla/mux"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/application"
-	sdkCommon "github.com/gq-tang/device-sdk-go/v2/internal/common"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/application"
+	sdkCommon "github.com/ChichiuLiang/device-sdk-go/v2/internal/common"
 )
 
 func (c *RestController) GetCommand(w http.ResponseWriter, r *http.Request) {
@@ -132,3 +132,4 @@ func filterQueryParams(rawQuery string) (string, url.Values, errors.EdgeX) {
 
 	return queryParams.Encode(), reserved, nil
 }
+

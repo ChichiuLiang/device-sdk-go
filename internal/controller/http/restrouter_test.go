@@ -30,8 +30,8 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/config"
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/config"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
 )
 
 func TestAddRoute(t *testing.T) {
@@ -123,3 +123,4 @@ func TestInitRestRoutes(t *testing.T) {
 
 	assert.NoError(t, err, "Unexpected error examining route")
 }
+

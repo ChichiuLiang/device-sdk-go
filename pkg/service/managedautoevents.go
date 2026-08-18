@@ -13,7 +13,7 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/errors"
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/models"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/cache"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/cache"
 )
 
 // AddDeviceAutoEvent adds a new AutoEvent to the Device with given name
@@ -76,3 +76,4 @@ func (s *DeviceService) RemoveDeviceAutoEvent(deviceName string, event models.Au
 
 	return nil
 }
+

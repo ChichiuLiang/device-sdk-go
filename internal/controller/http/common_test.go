@@ -41,9 +41,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	sdkCommon "github.com/gq-tang/device-sdk-go/v2/internal/common"
-	"github.com/gq-tang/device-sdk-go/v2/internal/config"
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
+	sdkCommon "github.com/ChichiuLiang/device-sdk-go/v2/internal/common"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/config"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
 )
 
 var expectedCorrelationId = uuid.New().String()
@@ -376,3 +376,4 @@ func doRequest(t *testing.T, method string, api string, handler http.HandlerFunc
 
 	return recorder
 }
+

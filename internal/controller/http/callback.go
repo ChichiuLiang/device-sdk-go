@@ -16,7 +16,7 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/errors"
 	"github.com/gorilla/mux"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/application"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/application"
 )
 
 func (c *RestController) DeleteDevice(writer http.ResponseWriter, request *http.Request) {
@@ -171,3 +171,4 @@ func (c *RestController) UpdateDeviceService(writer http.ResponseWriter, request
 		c.sendEdgexError(writer, request, edgexErr, common.ApiServiceCallbackRoute)
 	}
 }
+

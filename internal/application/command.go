@@ -19,11 +19,11 @@ import (
 
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/clients/http/utils"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/cache"
-	sdkCommon "github.com/gq-tang/device-sdk-go/v2/internal/common"
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
-	"github.com/gq-tang/device-sdk-go/v2/internal/transformer"
-	sdkModels "github.com/gq-tang/device-sdk-go/v2/pkg/models"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/cache"
+	sdkCommon "github.com/ChichiuLiang/device-sdk-go/v2/internal/common"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/transformer"
+	sdkModels "github.com/ChichiuLiang/device-sdk-go/v2/pkg/models"
 
 	bootstrapContainer "github.com/edgexfoundry/go-mod-bootstrap/v2/bootstrap/container"
 	"github.com/edgexfoundry/go-mod-bootstrap/v2/di"
@@ -654,3 +654,4 @@ func float64FromBytes(numericValue []byte) (res float64, err error) {
 	err = binary.Read(reader, binary.BigEndian, &res)
 	return
 }
+

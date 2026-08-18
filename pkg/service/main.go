@@ -23,10 +23,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/autodiscovery"
-	"github.com/gq-tang/device-sdk-go/v2/internal/autoevent"
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
-	"github.com/gq-tang/device-sdk-go/v2/internal/controller/messaging"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/autodiscovery"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/autoevent"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/controller/messaging"
 )
 
 const EnvInstanceName = "EDGEX_INSTANCE_NAME"
@@ -140,3 +140,4 @@ func setServiceName(name string) string {
 
 	return name
 }
+

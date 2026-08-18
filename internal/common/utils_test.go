@@ -24,8 +24,8 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/config"
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/config"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
 )
 
 const (
@@ -199,3 +199,4 @@ func TestInitializeSentMetrics(t *testing.T) {
 		})
 	}
 }
+

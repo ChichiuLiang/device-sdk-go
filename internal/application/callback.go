@@ -10,8 +10,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/cache"
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/cache"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
 
 	bootstrapContainer "github.com/edgexfoundry/go-mod-bootstrap/v2/bootstrap/container"
 	"github.com/edgexfoundry/go-mod-bootstrap/v2/di"
@@ -282,3 +282,4 @@ func updateAssociatedProfile(profileName string, dic *di.Container) errors.EdgeX
 
 	return nil
 }
+

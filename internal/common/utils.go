@@ -13,7 +13,7 @@ import (
 	"time"
 
 	bootstrapInterfaces "github.com/edgexfoundry/go-mod-bootstrap/v2/bootstrap/interfaces"
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
 	gometrics "github.com/rcrowley/go-metrics"
 
 	bootstrapContainer "github.com/edgexfoundry/go-mod-bootstrap/v2/bootstrap/container"
@@ -134,3 +134,4 @@ func registerMetric(metricsManager bootstrapInterfaces.MetricsManager, lc logger
 		lc.Debugf("%s metric has been registered and will be reported (if enabled)", name)
 	}
 }
+

@@ -19,7 +19,7 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/models"
 	"github.com/google/uuid"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/cache"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/cache"
 )
 
 // AddDevice adds a new Device to the Device Service and Core Metadata
@@ -127,3 +127,4 @@ func (s *DeviceService) UpdateDeviceOperatingState(deviceName string, state stri
 
 	return err
 }
+

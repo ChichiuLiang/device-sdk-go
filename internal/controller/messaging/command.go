@@ -19,9 +19,9 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/errors"
 	"github.com/edgexfoundry/go-mod-messaging/v2/pkg/types"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/application"
-	sdkCommon "github.com/gq-tang/device-sdk-go/v2/internal/common"
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/application"
+	sdkCommon "github.com/ChichiuLiang/device-sdk-go/v2/internal/common"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
 )
 
 const (
@@ -232,3 +232,4 @@ func filterQueryParams(queries map[string]string) (string, bool, bool) {
 
 	return strings.Join(rawQuery, "&"), pushEvent, returnEvent
 }
+

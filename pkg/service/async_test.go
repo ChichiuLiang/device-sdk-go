@@ -12,7 +12,7 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/models"
 	"github.com/stretchr/testify/assert"
 
-	sdkModels "github.com/gq-tang/device-sdk-go/v2/pkg/models"
+	sdkModels "github.com/ChichiuLiang/device-sdk-go/v2/pkg/models"
 )
 
 var d = sdkModels.DiscoveredDevice{
@@ -146,3 +146,4 @@ func Test_checkBlockList(t *testing.T) {
 		})
 	}
 }
+

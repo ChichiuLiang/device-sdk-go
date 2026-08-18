@@ -10,7 +10,7 @@ import (
 	"github.com/edgexfoundry/go-mod-bootstrap/v2/di"
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/models"
 
-	sdkModels "github.com/gq-tang/device-sdk-go/v2/pkg/models"
+	sdkModels "github.com/ChichiuLiang/device-sdk-go/v2/pkg/models"
 )
 
 // DeviceServiceName contains the name of device service struct in the DIC.
@@ -60,3 +60,4 @@ func ProtocolDriverFrom(get di.Get) sdkModels.ProtocolDriver {
 func ManagerFrom(get di.Get) sdkModels.AutoEventManager {
 	return get(ManagerName).(sdkModels.AutoEventManager)
 }
+

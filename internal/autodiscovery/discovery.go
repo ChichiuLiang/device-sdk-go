@@ -11,7 +11,7 @@ import (
 
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/clients/logger"
 
-	"github.com/gq-tang/device-sdk-go/v2/pkg/models"
+	"github.com/ChichiuLiang/device-sdk-go/v2/pkg/models"
 )
 
 type discoveryLocker struct {
@@ -39,3 +39,4 @@ func DiscoveryWrapper(discovery models.ProtocolDiscovery, lc logger.LoggingClien
 	locker.busy = false
 	locker.mux.Unlock()
 }
+

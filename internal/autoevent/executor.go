@@ -21,8 +21,8 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/models"
 	"github.com/google/uuid"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/application"
-	sdkCommon "github.com/gq-tang/device-sdk-go/v2/internal/common"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/application"
+	sdkCommon "github.com/ChichiuLiang/device-sdk-go/v2/internal/common"
 )
 
 type Executor struct {
@@ -158,3 +158,4 @@ func NewExecutor(deviceName string, ae models.AutoEvent) (*Executor, errors.Edge
 		stop:       false,
 		mutex:      &sync.Mutex{}}, nil
 }
+

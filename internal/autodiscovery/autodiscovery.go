@@ -16,7 +16,7 @@ import (
 	"github.com/edgexfoundry/go-mod-bootstrap/v2/bootstrap/startup"
 	"github.com/edgexfoundry/go-mod-bootstrap/v2/di"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
 )
 
 func BootstrapHandler(
@@ -63,3 +63,4 @@ func BootstrapHandler(
 
 	return true
 }
+

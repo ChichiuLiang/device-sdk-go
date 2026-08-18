@@ -13,7 +13,7 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/errors"
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/models"
 
-	dsModels "github.com/gq-tang/device-sdk-go/v2/pkg/models"
+	dsModels "github.com/ChichiuLiang/device-sdk-go/v2/pkg/models"
 )
 
 func TransformWriteParameter(cv *dsModels.CommandValue, pv models.ResourceProperties) errors.EdgeX {
@@ -275,3 +275,4 @@ func validateWriteMinimum(value interface{}, minimum string) errors.EdgeX {
 	}
 	return nil
 }
+

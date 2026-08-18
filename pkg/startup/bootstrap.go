@@ -12,10 +12,11 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/clients/logger"
 
 	"github.com/gorilla/mux"
-	"github.com/gq-tang/device-sdk-go/v2/pkg/service"
+	"github.com/ChichiuLiang/device-sdk-go/v2/pkg/service"
 )
 
 func Bootstrap(serviceName string, serviceVersion string, driver interface{}, lc logger.LoggingClient) {
 	ctx, cancel := context.WithCancel(context.Background())
 	service.Main(serviceName, serviceVersion, driver, ctx, cancel, mux.NewRouter(), lc)
 }
+

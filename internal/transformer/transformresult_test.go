@@ -16,7 +16,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gq-tang/device-sdk-go/v2/pkg/models"
+	"github.com/ChichiuLiang/device-sdk-go/v2/pkg/models"
 )
 
 func Test_transformReadBase(t *testing.T) {
@@ -292,3 +292,4 @@ func Test_mapCommandValue(t *testing.T) {
 		})
 	}
 }
+

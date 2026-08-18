@@ -23,7 +23,7 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/errors"
 	"github.com/gorilla/mux"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/controller/http/correlation"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/controller/http/correlation"
 )
 
 type RestController struct {
@@ -170,3 +170,4 @@ func (c *RestController) sendEdgexError(
 	response := commonDTO.NewBaseResponse("", err.Error(), err.Code())
 	c.sendResponse(writer, request, api, response, err.Code())
 }
+

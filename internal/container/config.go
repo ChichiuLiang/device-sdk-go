@@ -9,7 +9,7 @@ package container
 import (
 	"github.com/edgexfoundry/go-mod-bootstrap/v2/di"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/config"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/config"
 )
 
 // ConfigurationName contains the name of device service's ConfigurationStruct implementation in the DIC.
@@ -19,3 +19,4 @@ var ConfigurationName = di.TypeInstanceToName(config.ConfigurationStruct{})
 func ConfigurationFrom(get di.Get) *config.ConfigurationStruct {
 	return get(ConfigurationName).(*config.ConfigurationStruct)
 }
+

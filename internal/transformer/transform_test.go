@@ -19,11 +19,11 @@ import (
 	dtoCommon "github.com/edgexfoundry/go-mod-core-contracts/v2/dtos/common"
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/dtos/responses"
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/models"
-	"github.com/gq-tang/device-sdk-go/v2/internal/cache"
-	"github.com/gq-tang/device-sdk-go/v2/internal/config"
-	"github.com/gq-tang/device-sdk-go/v2/internal/container"
-	sdkModels "github.com/gq-tang/device-sdk-go/v2/pkg/models"
-	"github.com/gq-tang/device-sdk-go/v2/pkg/models/mocks"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/cache"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/config"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/container"
+	sdkModels "github.com/ChichiuLiang/device-sdk-go/v2/pkg/models"
+	"github.com/ChichiuLiang/device-sdk-go/v2/pkg/models/mocks"
 
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/clients/logger"
 	"github.com/stretchr/testify/assert"
@@ -184,3 +184,4 @@ func TestCommandValuesToEventDTO_ReadingUnits(t *testing.T) {
 		})
 	}
 }
+

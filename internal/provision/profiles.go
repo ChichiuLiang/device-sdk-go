@@ -15,7 +15,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gq-tang/device-sdk-go/v2/internal/cache"
+	"github.com/ChichiuLiang/device-sdk-go/v2/internal/cache"
 
 	bootstrapContainer "github.com/edgexfoundry/go-mod-bootstrap/v2/bootstrap/container"
 	"github.com/edgexfoundry/go-mod-bootstrap/v2/di"
@@ -107,3 +107,4 @@ func LoadProfiles(path string, dic *di.Container) errors.EdgeX {
 	_, edgexErr := dpc.Add(ctx, addProfilesReq)
 	return edgexErr
 }
+
